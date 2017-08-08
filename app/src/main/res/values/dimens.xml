@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="appbar_size">56dp</dimen>
+    <dimen name="headline_font_size">20dp</dimen>
+</resources>
