@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+    <!--margins-->
+    <dimen name="wide_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    
+    <!-- sizes-->
     <dimen name="appbar_size">56dp</dimen>
     <dimen name="headline_font_size">20dp</dimen>
     <dimen name="popular_item_width">210dp</dimen>
     <dimen name="popular_item_height">115dp</dimen>
     <dimen name="popular_item_image_height">88dp</dimen>
+    <dimen name="category_card_height">128dp</dimen>
+    <dimen name="category_card_width">100dp</dimen>
 
 </resources>

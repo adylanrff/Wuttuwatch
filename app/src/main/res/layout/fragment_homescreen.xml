@@ -1,13 +1,196 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/wide_margin"
     tools:context="com.adylanroaffa.wuttuwatch.Fragments.MoviesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <android.support.v7.widget.RecyclerView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/popular_tv"
+                style="@style/homesreen_headline"
+                android:text="POPULAR THIS WEEK" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/popular_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/wide_margin"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/browse_category_tv"
+                style="@style/homesreen_headline"
+                android:text="BROWSE BY GENRE" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="8dp">
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="8dp">
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="8dp">
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
