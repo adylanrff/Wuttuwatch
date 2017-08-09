@@ -12,15 +12,22 @@ import com.adylanroaffa.wuttuwatch.R;
 public class HomescreenActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homescreen);
 
+        //Add Toolbar
         toolbar = (Toolbar) findViewById(R.id.homescreen_toolbar);
+        toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        //TODO: add fragment manager
+        /*Fragment movieFragment = new MoviesFragment();
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment_container, movieFragment).commit();
+        */
     }
 
     @Override

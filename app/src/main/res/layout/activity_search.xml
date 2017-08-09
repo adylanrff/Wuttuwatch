@@ -13,6 +13,16 @@
         android:layout_height="@dimen/appbar_size"
         android:background="@color/colorPrimary"
         tools:ignore="NewApi">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:hint="@string/action_search"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:inputType="textUri"/>
     </android.support.v7.widget.Toolbar>
 
 </LinearLayout>

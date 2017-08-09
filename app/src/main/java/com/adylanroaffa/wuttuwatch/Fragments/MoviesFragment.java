@@ -16,7 +16,7 @@ import com.adylanroaffa.wuttuwatch.R;
  * Use the {@link MoviesFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MoviesFragment extends Fragment {
+public class MoviesFragment extends Fragment{
 
     // TODO: Rename and change types of parameters
     private String mParam1;

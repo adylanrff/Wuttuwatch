@@ -1,6 +1,7 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/wide_margin"
@@ -37,8 +38,60 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:divider="8dp">
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        style="@style/category_card_view"
+                        app:cardElevation="@dimen/cardview_default_elevation"
+                        app:cardCornerRadius="@dimen/cardview_default_radius">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView style="@style/category_card_view">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView style="@style/category_image" />
+
+                            <TextView
+                                style="@style/category_tv"
+                                android:text="GENRE" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
                     <android.support.v7.widget.CardView style="@style/category_card_view">
 
@@ -88,59 +141,7 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:divider="8dp">
-
-                    <android.support.v7.widget.CardView style="@style/category_card_view">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView style="@style/category_image" />
-
-                            <TextView
-                                style="@style/category_tv"
-                                android:text="GENRE" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView style="@style/category_card_view">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView style="@style/category_image" />
-
-                            <TextView
-                                style="@style/category_tv"
-                                android:text="GENRE" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView style="@style/category_card_view">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView style="@style/category_image" />
-
-                            <TextView
-                                style="@style/category_tv"
-                                android:text="GENRE" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:divider="8dp">
+                    android:layout_height="wrap_content">
 
                     <android.support.v7.widget.CardView style="@style/category_card_view">
 
