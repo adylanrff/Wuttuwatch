@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.adylanroaffa.wuttuwatch.Activities.HomescreenActivity">
+    tools:context="com.adylanroaffa.wuttuwatch.Activities.SearchActivity">
+
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/homescreen_toolbar"
+        android:id="@+id/search_screen_toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/appbar_size"
         android:background="@color/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
-
+        tools:ignore="NewApi">
     </android.support.v7.widget.Toolbar>
 
 </LinearLayout>

@@ -1,10 +1,13 @@
-package com.adylanroaffa.wuttuwatch;
+package com.adylanroaffa.wuttuwatch.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.adylanroaffa.wuttuwatch.R;
 
 public class HomescreenActivity extends AppCompatActivity {
 
@@ -28,6 +31,15 @@ public class HomescreenActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+
+        switch (item.getItemId()){
+            case R.id.action_search: {
+                    Intent searchIntent = new Intent(HomescreenActivity.this,SearchActivity.class);
+                    startActivityForResult(searchIntent,0);
+            }
+
+        }
+
+        return true;
     }
 }

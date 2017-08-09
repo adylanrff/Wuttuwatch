@@ -4,4 +4,8 @@
 
     <dimen name="appbar_size">56dp</dimen>
     <dimen name="headline_font_size">20dp</dimen>
+    <dimen name="popular_item_width">210dp</dimen>
+    <dimen name="popular_item_height">115dp</dimen>
+    <dimen name="popular_item_image_height">88dp</dimen>
+
 </resources>
