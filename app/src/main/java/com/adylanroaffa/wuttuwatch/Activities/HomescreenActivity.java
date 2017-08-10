@@ -2,11 +2,14 @@ package com.adylanroaffa.wuttuwatch.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.adylanroaffa.wuttuwatch.CategoryAdapter;
 import com.adylanroaffa.wuttuwatch.R;
 
 public class HomescreenActivity extends AppCompatActivity {
@@ -18,16 +21,25 @@ public class HomescreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_homescreen);
 
         //Add Toolbar
-        toolbar = (Toolbar) findViewById(R.id.homescreen_toolbar);
+       toolbar = (Toolbar) findViewById(R.id.homescreen_toolbar);
         toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
 
-        //TODO: add fragment manager
-        /*Fragment movieFragment = new MoviesFragment();
+        //TODO: add TABS
+        //find the view pager to swipe
+        ViewPager viewPager = (ViewPager) findViewById(R.id.homescreen_viewpager);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.fragment_container, movieFragment).commit();
-        */
+        //Create adapter
+        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager());
+
+        //set the adapter to view pager
+        viewPager.setAdapter(adapter);
+
+        //set the Tab layout
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.homescreen_tab);
+        tabLayout.setupWithViewPager(viewPager);
+
+
     }
 
     @Override

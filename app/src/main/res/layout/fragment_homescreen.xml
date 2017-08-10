@@ -38,7 +38,8 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
                     <android.support.v7.widget.CardView style="@style/category_card_view">
 
@@ -91,7 +92,8 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
                     <android.support.v7.widget.CardView style="@style/category_card_view">
 
@@ -141,7 +143,8 @@
 
                 <TableRow
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
 
                     <android.support.v7.widget.CardView style="@style/category_card_view">
 
