@@ -2,46 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
 
     <android.support.v7.widget.CardView
         android:layout_width="@dimen/popular_item_width"
         android:layout_height="@dimen/popular_item_height"
         app:cardElevation="@dimen/cardview_default_elevation"
-        app:cardCornerRadius="@dimen/cardview_default_radius">
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardPreventCornerOverlap="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/popular_image_view"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/popular_item_image_height"
                 android:background="@color/colorAccent"
                 />
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="end"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/popular_share"
-                    android:padding="2dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/popular_title_tv"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:textStyle="bold"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:tint="@color/colorPrimaryDark"
-                    android:src="@drawable/ic_share"/>
+                    android:layout_height="match_parent"
+                    android:text="titletitletitletitletitletitletitle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/body"
+                    android:maxWidth="100dp"
+                    android:maxLines="2"
+                    />
+                    <ImageView
+                        android:paddingTop="@dimen/small_margin"
+                        android:id="@+id/popular_add_to_wishlist"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:tint="@color/colorPrimaryDark"
+                        android:layout_gravity="right"
+                        android:src="@drawable/ic_more"/>
 
-                <ImageView
-                    android:id="@+id/popular_add_to_wishlist"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:tint="@color/colorPrimaryDark"
-                    android:src="@drawable/ic_add_to_watchlist"/>
-
-            </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

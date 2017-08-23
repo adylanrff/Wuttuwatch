@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adylanroaffa.wuttuwatch.Activities.DetailsActivity"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_size"
+        android:background="@color/colorPrimary"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:layout_marginBottom="@dimen/wide_margin"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/detail_youtube"
+                android:layout_width="match_parent"
+                android:layout_height="185dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+                <TextView
+                    android:layout_marginLeft="@dimen/wide_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="War of the planet of the Apes"
+                    android:textSize="@dimen/title"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:maxWidth="250dp"
+                    />
+                <ImageView
+                    android:id="@+id/detail_add_to_watchlist_IV"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_add_to_watchlist"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/wide_margin"
+                    android:layout_marginRight="@dimen/wide_margin"
+                    />
+                <ImageView
+                    android:id="@+id/detail_share_IV"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_share"
+                    android:layout_toLeftOf="@id/detail_add_to_watchlist_IV"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wide_margin"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="@dimen/small_margin"
+                android:paddingLeft="@dimen/wide_margin"
+                android:paddingTop="@dimen/small_margin"
+                android:text="@string/overview"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subheader" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/wide_margin">
+
+                <ImageView
+                    android:id="@+id/detail_image_view"
+                    android:layout_width="@dimen/detail_image_width"
+                    android:layout_height="@dimen/detail_image_height"
+                    android:layout_marginEnd="@dimen/wide_margin"
+                    android:layout_marginRight="@dimen/wide_margin"
+                    android:background="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/wide_margin"
+                        android:text="War of The Planet of The Apes"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Genre"
+                        android:textColor="@color/lightColorPrimaryDark"
+                        android:textSize="@dimen/subtitle" />
+
+                    <TextView
+                        android:id="@+id/detail_genre_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="Genre"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Runtime"
+                        android:textColor="@color/lightColorPrimaryDark"
+                        android:textSize="@dimen/subtitle" />
+
+                    <TextView
+                        android:id="@+id/detail_runtime_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="Runtime"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Release date"
+                        android:textColor="@color/lightColorPrimaryDark"
+                        android:textSize="@dimen/subtitle" />
+
+                    <TextView
+                        android:id="@+id/detail_release_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="DD-MM-YY"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/body" />
+
+                    <TextView
+                        android:id="@+id/detail_rating_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small_margin"
+                        android:text="Rating"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/title" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/wide_margin"
+                android:layout_marginLeft="@dimen/wide_margin"
+                android:layout_marginRight="@dimen/wide_margin"
+                android:gravity="start"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textSize="@dimen/body"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>

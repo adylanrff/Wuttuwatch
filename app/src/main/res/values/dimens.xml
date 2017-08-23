@@ -4,14 +4,41 @@
     <!--margins-->
     <dimen name="wide_margin">16dp</dimen>
     <dimen name="small_margin">8dp</dimen>
+
+    <dimen name="toolbar_height">48dp</dimen>
     
     <!-- sizes-->
+    //Font size
+    <dimen name="headline">24sp</dimen>
+    <dimen name="title">20sp</dimen>
+    <dimen name="subheader">16sp</dimen>
+    <dimen name="body">14sp</dimen>
+    <dimen name="subtitle">10sp</dimen>
+    <dimen name="details">8sp</dimen>
+
+    
+    //Popular Card
     <dimen name="appbar_size">56dp</dimen>
     <dimen name="headline_font_size">20dp</dimen>
-    <dimen name="popular_item_width">210dp</dimen>
-    <dimen name="popular_item_height">115dp</dimen>
-    <dimen name="popular_item_image_height">88dp</dimen>
+    <dimen name="popular_item_width">120dp</dimen>
+    <dimen name="popular_item_height">230dp</dimen>
+    <dimen name="popular_item_image_height">180dp</dimen>
+    <dimen name="popular_item_image_width">92dp</dimen>
+
+    //Genre card
     <dimen name="category_card_height">128dp</dimen>
     <dimen name="category_card_width">100dp</dimen>
+
+    //Search Result card
+    <dimen name="result_card_height">200dp</dimen>
+    <dimen name="result_card_width">350dp</dimen>
+    <dimen name="result_image_height">180dp</dimen>
+    <dimen name="result_image_width">120dp</dimen>
+    
+    //Detail Activity
+    <dimen name="youtube_view_height">185dp</dimen>
+    <dimen name="overview_height">24dp</dimen>
+    <dimen name="detail_image_height">187.5dp</dimen>
+    <dimen name="detail_image_width">125dp</dimen>
 
 </resources>

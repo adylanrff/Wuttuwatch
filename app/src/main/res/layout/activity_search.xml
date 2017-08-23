@@ -4,25 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.adylanroaffa.wuttuwatch.Activities.SearchActivity">
-
+    tools:context="com.adylanroaffa.wuttuwatch.Activities.SearchActivity"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/search_screen_toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/appbar_size"
         android:background="@color/colorPrimary"
+        android:elevation="4dp"
         tools:ignore="NewApi">
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/search_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:hint="@string/action_search"
             android:textColorHint="@color/colorPrimaryDark"
             android:textColor="@color/colorAccent"
             android:inputType="textUri"/>
     </android.support.v7.widget.Toolbar>
 
+    <Spinner
+        android:elevation="2dp"
+        android:id="@+id/search_spinner"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:entries="@array/choose_type"
+        android:textAlignment="center"
+        android:dropDownSelector="@color/colorPrimaryDark"
+        android:spinnerMode="dialog">
+    </Spinner>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/search_progress_bar"
+            android:layout_centerInParent="true"
+            android:layout_margin="32dp"
+            android:layout_width="match_parent"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
 </LinearLayout>

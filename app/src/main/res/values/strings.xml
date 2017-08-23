@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">Wuttuwatch</string>
+    <string name="app_name">Wutuwatch</string>
     <string name="action_search">Search</string>
+    <string name="overview">Overview</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string-array name="choose_type">
+        <item>Movies</item>
+        <item>TV Shows</item>
+    </string-array>
 </resources>

@@ -9,10 +9,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.adylanroaffa.wuttuwatch.CategoryAdapter;
+import com.adylanroaffa.wuttuwatch.Adapters.CategoryFragmentAdapter;
 import com.adylanroaffa.wuttuwatch.R;
 
+//ODY JANGAN NGODING MULU PLIS, ISTIRAHAT LAH, JANGAN NGODING TERUS, GUE AJA CAPE LIAT LO NGODING
+
 public class HomescreenActivity extends AppCompatActivity {
+
 
     private Toolbar toolbar;
     @Override
@@ -23,6 +26,7 @@ public class HomescreenActivity extends AppCompatActivity {
         //Add Toolbar
        toolbar = (Toolbar) findViewById(R.id.homescreen_toolbar);
         toolbar.setTitle(R.string.app_name);
+        toolbar.setOverflowIcon(getDrawable(R.drawable.ic_more));
         setSupportActionBar(toolbar);
 
         //TODO: add TABS
@@ -30,7 +34,7 @@ public class HomescreenActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.homescreen_viewpager);
 
         //Create adapter
-        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager());
+        CategoryFragmentAdapter adapter = new CategoryFragmentAdapter(getSupportFragmentManager());
 
         //set the adapter to view pager
         viewPager.setAdapter(adapter);
@@ -56,9 +60,10 @@ public class HomescreenActivity extends AppCompatActivity {
                     Intent searchIntent = new Intent(HomescreenActivity.this,SearchActivity.class);
                     startActivityForResult(searchIntent,0);
             }
-
         }
-
         return true;
     }
+
+
+
 }

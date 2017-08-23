@@ -4,32 +4,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/wide_margin"
     tools:context="com.adylanroaffa.wuttuwatch.Fragments.MoviesFragment">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <LinearLayout
+            android:paddingTop="@dimen/wide_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/popular_tv"
                 style="@style/homesreen_headline"
-                android:text="POPULAR THIS WEEK" />
+                android:layout_marginLeft="@dimen/wide_margin"
+                android:text="TOP RATED" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/popular_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/wide_margin"/>
+                <ProgressBar
+                    android:id="@+id/movie_progress_bar"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/popular_item_height"
+                    android:layout_width="wrap_content"
+                    android:progressTint="@color/colorPrimary"
+                    android:progressBackgroundTint="@color/colorPrimaryDark"/>
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/popular_recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/wide_margin"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/browse_category_tv"
                 style="@style/homesreen_headline"
+                android:layout_marginLeft="@dimen/wide_margin"
                 android:text="BROWSE BY GENRE" />
 
             <TableLayout
@@ -58,8 +71,8 @@
 
                     <android.support.v7.widget.CardView
                         style="@style/category_card_view"
-                        app:cardElevation="@dimen/cardview_default_elevation"
-                        app:cardCornerRadius="@dimen/cardview_default_radius">
+                        app:cardCornerRadius="@dimen/cardview_default_radius"
+                        app:cardElevation="@dimen/cardview_default_elevation">
 
                         <LinearLayout
                             android:layout_width="match_parent"
